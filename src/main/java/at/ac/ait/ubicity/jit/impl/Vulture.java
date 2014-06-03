@@ -15,7 +15,7 @@
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see http://www.gnu.org/licenses/agpl-3.0.html
  */
-package at.ac.ait.ubicity.jit;
+package at.ac.ait.ubicity.jit.impl;
 
 
 /**
@@ -24,9 +24,9 @@ package at.ac.ait.ubicity.jit;
  */
 final class Vulture extends Thread {
 
-	protected final JitIndexingPlugin jitController;
+	protected final JitControllerImpl jitController;
 
-	public Vulture(final JitIndexingPlugin _jitController) {
+	public Vulture(final JitControllerImpl _jitController) {
 		super(_jitController.threadGroup, "Connection Vulture");
 		jitController = _jitController;
 		this.start();

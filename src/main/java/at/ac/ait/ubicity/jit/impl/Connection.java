@@ -16,7 +16,7 @@
     along with this program.  If not, see http://www.gnu.org/licenses/agpl-3.0.html
  */
 
-package at.ac.ait.ubicity.jit;
+package at.ac.ait.ubicity.jit.impl;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
