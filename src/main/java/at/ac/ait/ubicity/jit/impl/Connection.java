@@ -79,7 +79,7 @@ class Connection extends Thread {
 				Command _command = (Command) o;
 				logger.info("Received a command:: " + _command.toRESTString()
 						+ " from " + client.getInetAddress());
-				Answer _a = UbicityCore.getInstance().forward(_command);
+				Answer _a = UbicityCore.forward(_command);
 				if (!(_a == null))
 					out.writeObject(_a);
 			} catch (IOException | ClassNotFoundException ex) {
