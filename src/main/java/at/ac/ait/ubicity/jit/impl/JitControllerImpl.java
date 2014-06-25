@@ -40,7 +40,7 @@ public class JitControllerImpl implements JitController {
 
 		try {
 			listenSocket = new ServerSocket(
-					config.getInt("plugin.jit.reverse_cac_port"));
+					config.getInt("env.jit.reverse_cac_port"));
 		} catch (Exception | Error e) {
 			logger.fatal("Could not create server-side socket on ubicity core:"
 					+ e);
