@@ -15,10 +15,10 @@
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see http://www.gnu.org/licenses/agpl-3.0.html
  */
-package at.ac.ait.ubicity.jit;
+package at.ac.ait.ubicity.http;
 
 import at.ac.ait.ubicity.commons.interfaces.UbicityPlugin;
 
-public interface JitController extends UbicityPlugin {
+public interface HttpController extends UbicityPlugin {
 
 }
