@@ -35,6 +35,7 @@ public class HttpControllerImpl implements HttpController {
 		try {
 			URI baseUri = UriBuilder.fromUri("http://localhost/").port(config.getInt("env.http.endpoint_port")).build();
 			ResourceConfig config = new ResourceConfig(getResourceClasses());
+			config.property("com.sun.jersey.api.json.POJOMappingFeature", true);
 
 			server = JdkHttpServerFactory.createHttpServer(baseUri, config);
 
