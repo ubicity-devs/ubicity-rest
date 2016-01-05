@@ -39,6 +39,7 @@ public class HttpControllerImpl implements HttpController {
 
 			server = JdkHttpServerFactory.createHttpServer(baseUri, config);
 
+			logger.info("Started REST Endpoint at " + baseUri.toString());
 		} catch (Exception | Error e) {
 			logger.error("Could not create http server.", e);
 		}
